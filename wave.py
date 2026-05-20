@@ -259,4 +259,3 @@ class ViViT(nn.Module):
 
         x = x.mean(dim=1) if self.pool == "mean" else x[:, 0]
         return self.mlp_head(x)
-
